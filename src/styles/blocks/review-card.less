@@ -1,0 +1,42 @@
+.review-card {
+    width: 360px;
+    min-height: 210px;
+    background-color: @color-white;
+    padding: 25px;
+    box-sizing: border-box;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 17px;
+        height: 13px;
+        background-image: url(../../assets/images/img_twitter-icon.png);
+        right: 30px;
+        top: 32px;
+    }
+
+    &__name {
+        font-family: @quick-send;
+        font-size: 18px;
+        line-height: 27px;
+        margin: 0 0 5px 0;
+    }
+
+    &__role {
+        font-family: @quick-send;
+        font-size: 14px;
+        line-height: 27px;
+        margin: 0 0 15px 0;
+        color: #929292;
+    }
+
+    &__info {
+        font-family: @quick-send;
+        font-size: 16px;
+        line-height: 27px;
+        margin: 0;
+        color: #929292;
+        letter-spacing: -1px;
+    }
+}

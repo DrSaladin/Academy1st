@@ -1,0 +1,126 @@
+.advantages {
+    min-height: 590px;
+    padding-top: 225px;
+    box-sizing: border-box;
+    position: relative;
+    max-width: 1140px;
+    margin: 0 auto;
+
+    //&:first-of-type {
+    //    background-image: url(../../assets/images/img_easy-mass-back.jpg);
+    //    background-size: cover;
+    //    background-repeat: no-repeat;
+    //}
+
+    //&:last-of-type {
+    //    background-image: url(../../assets/images/img_keep-touch-back2.jpg);
+    //    background-size: cover;
+    //    background-repeat: no-repeat;
+    //}
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 480px;
+        height: 410px;
+        background-color: #0F7BFF;
+        border-radius: 50px;
+        transform: rotate(45deg);
+        top: 90px;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 263px;
+        height: 400px;
+        border-radius: 5px;
+        background-size: cover;
+    }
+    
+
+    &:first-of-type {
+        &::before {
+            left: -2%;
+        }
+
+        &::after {
+            top: 90px;
+            left: 11%;
+            background-image: url(../../assets/images/img_easy-mass-back2.jpg);
+        }
+    }
+
+    &:last-of-type {
+        &::before {
+            right: -2%;
+        }
+
+        &::after {
+            top: 90px;
+            right: 20%;
+            background-image: url(../../assets/images/img_keep-touch-back.jpg);
+        }
+    }
+
+    &__content-wrapper {
+        width: 50%;
+        margin-left: auto;
+    }
+
+    &__title {
+        font-family: @quick-send;
+        font-size: 32px;
+        line-height: 36px;
+        margin: 0 0 30px 0;
+        position: relative;
+    }
+
+    &__info {
+        font-family: @quick-send;
+        font-size: 16px;
+        line-height: 27px;
+        margin: 0 0 35px 0;
+        max-width: 555px;
+        color: #929292;
+        letter-spacing: -0.5px;
+    }
+
+    &__more-button {
+        font-family: @quick-send;
+        font-size: 16px;
+        line-height: 27px;
+        display: block;
+        color: #0F7BFF;
+        position: relative;
+        width: 120px;
+        transition: .3s;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 2px;
+            background-color: #0F7BFF;
+            right: 0;
+            top: 15px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border: 2px #0F7BFF solid;
+            border-bottom: transparent;
+            border-left: transparent;
+            transform: rotate(45deg);
+            right: 0;
+            top: 10px;
+        }
+    }
+}

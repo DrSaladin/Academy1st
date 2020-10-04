@@ -1,0 +1,54 @@
+.review {
+    min-height: 610px;
+    background-color: #F5FCFD;
+    box-sizing: border-box;
+    padding-top: 125px;
+    background-image: url(../../assets/images/img_twitter-back.png);
+    background-repeat: no-repeat;
+
+    &__wrapper {
+        margin-left: 850px;
+    }
+
+    &__title {
+        font-family: @quick-send;
+        font-size: 32px;
+        line-height: 36px;
+        margin: 0 0 35px 0;
+    }
+
+    &__card-list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        margin: 0 0 40px 0;
+
+        &-item {
+            margin-right: 30px;
+        }
+    }
+
+    &__switchers-list {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        &-item {
+            margin-right: 10px;
+        }
+    }
+
+    &__switcher {
+        width: 20px;
+        height: 10px;
+        background-color: #D4D4D4;
+        border: none;
+        border-radius: 5px;
+
+        &--active {
+            width: 30px;
+            background-color: #0F7BFF;
+        }
+    }
+}
