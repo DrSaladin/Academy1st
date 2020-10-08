@@ -2,8 +2,14 @@
     min-height: 645px;
     background-color: #F5FCFD;
     padding-top: 150px;
+    padding-bottom: 50px;
     box-sizing: border-box;
     position: relative;
+
+    @media @bw1250 {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
 
 
     &__title {
@@ -15,7 +21,11 @@
         text-transform: capitalize;
         position: relative;
         z-index: 3;
-        width: 315px;
+        max-width: 315px;
+
+        @media @bw768 {
+            font-size: 28px;
+        }
 
         &::before,
         &::after {
@@ -33,11 +43,19 @@
             left: 110px;
             background-color: #EDF5FF;
             top: 5px;
+
+            @media @bw400 {
+                left: 90px;
+            }
         }
 
         &::after {
             left: 150px;
             background-color: #EBF9FF;
+
+            @media @bw400 {
+                left: 130px;
+            }
         }
     }
 
@@ -61,6 +79,10 @@
         justify-content: space-between;
         position: relative;
 
+        @media @bw1250 {
+            flex-direction: column;
+        }
+
         &::before {
             content: "";
             position: absolute;
@@ -69,6 +91,10 @@
             background-color: #0F7BFF;
             top: 50px;
             left: 130px;
+
+            @media @bw1250 {
+                display: none;
+            }
         }
 
         &-item {
@@ -76,6 +102,10 @@
             position: relative;
             box-sizing: border-box;
             padding: 120px 15px 15px;
+
+            @media @bw1250 {
+                margin: 0 auto 50px;
+            }
 
             &::before {
                 content: "";
@@ -97,7 +127,11 @@
                 &::after {
                     content: url(../../assets/images/img_create-acc.png);
                     top: 26px;
-                    left: 161px;
+                    left: 160px;
+
+                    @media @bw768 {
+                        left: calc(50% - 18px);
+                    }
                 }
             }
 
@@ -106,6 +140,10 @@
                     content: url(../../assets/images/img_confirm-mail.png);
                     top: 25px;
                     left: 155px;
+
+                    @media @bw768 {
+                        left: calc(50% - 23px);
+                    }
                 }
             }
 
@@ -114,6 +152,14 @@
                     content: url(../../assets/images/img_see-results.png);
                     top: 22px;
                     left: 160px;
+
+                    @media @bw768 {
+                        left: calc(50% - 18px);
+                    }
+                }
+
+                @media @bw1250 {
+                    margin-bottom: 0;
                 }
             }
 

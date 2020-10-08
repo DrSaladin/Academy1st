@@ -1,0 +1,110 @@
+.trial {
+    min-height: 335px;
+    background-color: #F5FCFD;
+    box-sizing: border-box;
+    padding-top: 130px;
+    padding-bottom: 30px;
+
+    @media @bw900 {
+        padding-top: 60px;
+    }
+
+    &__wrapper {
+        max-width: 750px;
+        margin: 0 auto;
+        display: flex;
+
+        @media @bw900 {
+            flex-direction: column;
+        }
+    }
+
+    &__text-block {
+        margin-right: 155px;
+
+        @media @bw900 {
+            margin-right: 0;
+        }
+    }
+
+    &__title {
+        font-family: @quick-send;
+        font-size: 32px;
+        line-height: 36px;
+        margin: 0 0 25px 0;
+
+        @media @bw900 {
+            text-align: center;
+        }
+
+        @media @bw768 {
+            font-size: 28px;
+            letter-spacing: -1px;
+        }
+    }
+
+    &__info {
+        font-family: @quick-send;
+        font-size: 16px;
+        line-height: 27px;
+        margin: 0;
+        color: #929292;
+
+        @media @bw900 {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+    }
+
+    &__link {
+        font-family: @quick-send;
+        font-size: 16px;
+        line-height: 27px;
+        font-weight: bold;
+        text-decoration: none;
+        width: 260px;
+        min-height: 74px;
+        border: 2px solid #0F7BFF;
+        display: block;
+        position: relative;
+        text-transform: capitalize;
+        color: @color-white;
+        background-color: #0F7BFF;
+        box-sizing: border-box;
+        padding: 25px 40px;
+        text-align: center;
+        border-radius: 10px;
+        transition: .5s;
+
+        @media @bw900 {
+            margin: 0 auto;
+        }
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 2px;
+            background-color: @color-white;
+            right: 50px;
+            top: 40px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border: 2px @color-white solid;
+            border-bottom: transparent;
+            border-left: transparent;
+            transform: rotate(45deg);
+            right: 50px;
+            top: 35px;
+        }
+    }
+}

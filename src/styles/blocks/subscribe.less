@@ -1,0 +1,98 @@
+.subscribe {
+    min-height: 385px;
+    position: relative;
+    background-color: #0F7BFF;
+    box-sizing: border-box;
+    padding-top: 125px;
+    padding-bottom: 30px;
+
+    @media @bw900 {
+        padding-top: 90px;
+        min-height: 300px;
+    }
+
+    &__wrapper {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-family: @quick-send;
+        font-size: 32px;
+        line-height: 36px;
+        font-weight: bold;
+        margin: 0 0 25px 0;
+        color: @color-white;
+        text-align: center;
+    }
+
+    &__input-block {
+        display: flex;
+        max-width: 555px;
+        justify-content: center;
+        margin: 0 auto;
+
+        @media @bw768 {
+            flex-direction: column;
+            min-width: 280px;
+        }
+
+        input {
+            display: block;
+            height: 55px;
+            width: 390px;
+            border-radius: 25px 0 0 25px;
+            background-color: #0F7BFF;
+            color: @color-white;
+            border: 2px solid @color-white;
+            font-family: @quick-send;
+            font-size: 16px;
+            line-height: 27px;
+            box-sizing: border-box;
+            padding: 10px 10px 10px 30px;
+
+            @media @bw900 {
+                width: 230px;
+            }
+
+            @media @bw768 {
+                width: 280px;
+                border-radius: 25px 25px 0 0;
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+
+        button {
+            display: block;
+            height: 55px;
+            width: 165px;
+            border-radius: 0 25px 25px 0;
+            background-color: @color-white;
+            color: #0F7BFF;
+            border: 2px solid @color-white;
+            font-family: @quick-send;
+            font-size: 16px;
+            line-height: 27px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: .5s;
+
+            &:hover {
+                color: @color-white;
+                background-color: #509ba5;
+                border: 2px solid #509ba5;
+            }
+
+            @media @bw900 {
+                width: 135px;
+            }
+
+            @media @bw768 {
+                width: 280px;
+                margin: 0 auto;
+                border-radius: 0 0 25px 25px;
+            }
+        }
+    }
+}
